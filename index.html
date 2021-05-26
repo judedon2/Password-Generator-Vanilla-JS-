@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id='pw'></span>
+                <button id='copy'>Copy</button>
+            </div>
+        </div>
+        <div class="pw-body">
+
+            <!-- Built-validation for max and min used as attributes -->
+            <div class="form-control"><label for="length">Password Length</label><input type="number" id="length" min='4' max='40' value='20'></div>
+
+            <div class="form-control"><label for="upper">UpperCase Letters</label><input type="checkbox" id="upper"></div>
+
+            <div class="form-control"><label for="lower">LowerCase Letters</label><input type="checkbox" id="lower"></div>
+
+            <div class="form-control"><label for="number">Contains Numbers</label><input type="checkbox" id="number"></div>
+
+            <div class="form-control"><label for="symbol">Contains Symbols</label><input type="checkbox" id="symbol"></div>
+
+            <button class="generate" id="generate">Generate Password</button>
+          
+        </div>
+        
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
